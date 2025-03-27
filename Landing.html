@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="Landing.css">
+</head>
+<body>
+  <!-- Navigation Bar with Burger Menu -->
+  <nav>
+    <div class="logo">
+      <a href="#">Welcome to my Portfolio</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="Login.html"><i class="fas fa-user"></i> Login</a></li>
+    
+      <li><a href="Contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+    </ul>
+  </nav>
+      
+      
+      <div class="burger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard" class="dashboard">
+    <div class="container">
+      <div class="dashboard-content">
+        <div class="profile-pic">
+          <img src="./image/pb.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+          <h1>  PRO PAYZINE</h1>
+          <p class="tagline">Web Developer | Designer | Tech Enthusiast</p>
+          <p class="description">
+            I am a passionate web developer with expertise in building modern, responsive, and user-friendly websites. 
+            I love turning ideas into reality through code and design. Let's create something amazing together!
+          </p>
+          <a href="#contact" class="btn">Hire Me</a>
+        </div>
+      </div>
+      <div class="dashboard-details">
+        <div class="hobbies">
+          <h3>My Hobbies</h3>
+          <ul>
+            <li><i class="fas fa-code"></i> Coding</li>
+            <li><i class="fas fa-music"></i> Music</li>
+            <li><i class="fas fa-book"></i> Reading</li>
+            <li><i class="fas fa-plane"></i> Traveling</li>
+          </ul>
+        </div>
+        <div class="services">
+          <h3>Services I Offer</h3>
+          <ul>
+            <li><i class="fas fa-laptop-code"></i> Web Development</li>
+            <li><i class="fas fa-paint-brush"></i> UI/UX Design</li>
+            <li><i class="fas fa-mobile-alt"></i> Mobile App Development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I have over 2 years of experience in web development and design. I specialize in front-end technologies like HTML, CSS, JavaScript, and React. 
+        I also have a strong understanding of back-end technologies like Node.js and MongoDB. I am always eager to learn and adapt to new technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, React, Node.js</p>
+        </div>
+        <div class="skill">
+          <i class="fas fa-paint-brush"></i>
+          <h3>UI/UX Design</h3>
+          <p>Figma, Adobe XD, Photoshop</p>
+        </div>
+        <div class="skill">
+          <i class="fas fa-database"></i>
+          <h3>Database Management</h3>
+          <p>MongoDB, MySQL, Firebase</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+     
+ 
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <img src="./image/1_iAu65xDmvpVdBJgps6EDEw.png" alt="Project 1">
+          <h3>E-Commerce Website</h3>
+          <p>A fully functional e-commerce website built with React and Node.js.</p>
+        </div>
+        <div class="project">
+          <img src="./image/images.jpg" alt="Project 2">
+          <h3>Portfolio Website</h3>
+          <p>A modern portfolio website for a freelance photographer.</p>
+        </div>
+        <div class="project">
+          <img src="./image/image-online-calculator.jpg" alt="Project 3">
+          <h3>Online international calculator</h3>
+          <p>An online calculator for computation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Dashboard showing my certificates-->
+<div class="cc">
+  <h1>Check Out my <span>Certificates</span></h1>
+  <div id="photos" class="photos">
+      <img src="./Certificates/pa.jpg" alt="Photo 1">
+      <img src="./Certificates/p7.png" alt="Photo 2">
+      <img src="./Certificates/p8.png" alt="Photo 3">
+      <img src="./Certificates/pi.jpg" alt="Photo 4">
+      <img src="./Certificates/p4.jpg" alt="Photo 5">
+      <img src="./Certificates/p3.jpg" alt="Photo 6"> 
+      <img src="./Certificates/p5.jpg" alt="Photo 7">
+      <img src="./Certificates/p1.jpg" alt="Photo 8">
+  </div>
+  <div id="fullSizePhotoModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="fullSizePhoto">
+  </div>
+</div>
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Pro Payzine. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Burger Menu -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
